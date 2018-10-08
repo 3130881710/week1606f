@@ -11,7 +11,93 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <div class="header">
+            <p>云数据库</p>
+            <p>安全可靠得数据库服务，人气甄选，轻松管理</p>
+        </div>
+        <section>
 
+        </section>
+        <!-- <div class="section">
+            <div class="top">
+                <span><input type="radio">mysql</span>
+                <span>60tian</span>
+            </div>
+            <div class="buttom">
+                <span>2核<b>cpu</b></span>
+                <span>2核<b>cpu</b></span>
+                <span>2核<b>cpu</b></span>
+                <span>2核<b>cpu</b></span>
+            </div>
+        </div> -->
+        <div class="footer">
+            <p>MySQL</p>
+            <p><span>免费试用</span>60天</p>
+            <p>原价￥1020.00</p>
+            <button class="but">立即领取</button>
+        </div>
+    </div>
+    <script>
+        var obj = {
+            one: {
+                name: "MySQL",
+                time: "60天",
+                core: "2核",
+                memory: "4GB",
+                capacity: "40G",
+                store: "100GB"
+            },
+            two: {
+                name: "PostgreSQL",
+                time: "60天",
+                core: "2核",
+                memory: "4GB",
+                capacity: "40G",
+                store: "100GB"
+            },
+            three: {
+                name: "SQL Server",
+                time: "60天",
+                core: "2核",
+                memory: "4GB",
+                capacity: "40G",
+                store: "100GB"
+            },
+            four: {
+                name: "MongoDb",
+                time: "60天",
+                core: "2核",
+                memory: "4GB",
+                capacity: "40G",
+                store: "100GB"
+            }
+        }
+        var str = "";
+        for (var i in obj) {
+            console.log(i);
+            str += `<div class="section adder">
+                        <div class="top">
+                            <span><input type="radio" class="ipt">${obj[i].name}</span>
+                            <span>${obj[i].time}</span>
+                        </div>
+                        <div class="buttom">
+                            <span>${obj[i].core}<b>cpu</b></span>
+                            <span>${obj[i].memory}<b>内存</b></span>
+                            <span>${obj[i].capacity}<b>系统盘</b></span>
+                            <span>${obj[i].store}<b>数据盘</b></span>
+                        </div>
+                    </div>`
+        }
+        $("section").append(str);
+        $("section").on("click", ".ipt", function() {
+            if ($(this).checked == true) {
+                console.log(1);
+            }
+            console.log(1);
+            $(this).parents(".section").addClass("beder").removeClass("adder");
+        })
+    </script>
 </body>
 
 </html>

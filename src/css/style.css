@@ -10,3 +10,118 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: blue;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header>p {
+    text-indent: 20px;
+}
+
+.header>p:nth-child(2) {
+    font-size: 10px;
+    color: #ccc;
+}
+
+section {
+    flex-grow: 1;
+    overflow-y: auto;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+section .section {
+    width: 100%;
+    height: 110px;
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .section .top {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .section .top span {
+    margin: 0 10px;
+}
+
+section .section .buttom {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .section .buttom span {
+    width: 50%;
+    height: 50%;
+}
+
+section .section .buttom span b {
+    color: #ccc;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer>p {
+    text-indent: 20px;
+}
+
+.footer>p>span {
+    color: red;
+}
+
+.footer>p:nth-child(3) {
+    color: #ccc;
+}
+
+.footer>button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    background: red;
+    border: 0;
+}
+
+.beder {
+    border: 2px solid red;
+}
+
+.adder {
+    border: 1px solid #ccc;
+}
